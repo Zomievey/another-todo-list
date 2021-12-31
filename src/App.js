@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import TodoList from "./TodoList";
 import uniqid from "uniqid";
-import bootstrap from "bootstrap";
 
 const LOCAL_STORAGE_KEY = "todoApp.todos";
 
@@ -44,9 +43,13 @@ function App() {
       <div id={"main-component"} className="container">
         <div className="row">
           <div d-grid gap-2>
-            
             <TodoList todos={todos} toggleTodo={toggleTodo} />
-            <input id={"input-todo"} placeholder="add items to your list here" ref={todoNameRef} type="text" />
+            <input
+              id={"input-todo"}
+              placeholder="add items to your list here"
+              ref={todoNameRef}
+              type="text"
+            />
             <button
               type="button"
               class="btn btn-secondary"
@@ -62,11 +65,13 @@ function App() {
               Remove
             </button>
           </div>
-          <h1>{todos.filter((todo) => !todo.complete).length} left until finished</h1>
+          <h1>
+            {todos.filter((todo) => !todo.complete).length} left until finished
+          </h1>
         </div>
       </div>
     </>
-  )
+  );
 }
 
 export default App;
