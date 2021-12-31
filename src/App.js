@@ -65,9 +65,9 @@ function App() {
               Remove
             </button>
           </div>
-          <h1>
-            {todos.filter((todo) => !todo.complete).length}  until complete 
-          </h1>
+          <h6>
+            {todos.filter((todo) => !todo.complete).length}  until completed
+          </h6>
         </div>
       </div>
     </>
