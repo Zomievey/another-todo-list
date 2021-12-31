@@ -66,7 +66,7 @@ function App() {
             </button>
           </div>
           <h1>
-            {todos.filter((todo) => !todo.complete).length}  items remain 
+            {todos.filter((todo) => !todo.complete).length}  until complete 
           </h1>
         </div>
       </div>
