@@ -50,16 +50,16 @@ function App() {
               ref={todoNameRef}
               type="text"
             />
-            <button
+            <button id={"new-todo"} 
               type="button"
-              class="btn btn-secondary"
+              className="btn btn-secondary"
               onClick={handleAddTodo}
             >
               Add
             </button>
             <button
               type="button"
-              class="m-1 btn btn-secondary"
+              className="m-1 btn btn-secondary"
               onClick={handleClearTodos}
             >
               Remove
